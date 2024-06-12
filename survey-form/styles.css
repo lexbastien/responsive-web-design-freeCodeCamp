@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+
+/* RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'REM', sans-serif;
+    /* font-size: 1rem; */
+    background-color: #694873;
+    width: 100%;
+    height: auto;
+    color: #ffe;
+  }
+  
+#heading {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: .6rem;
+  }
+
+label {
+    text-shadow: 2px 2px 4px #000;
+}
+
+#main {
+    padding: 0% 20% 0% 20%;
+}
+
+#title {
+    font-size: 2.2rem;
+    text-align: center;
+    line-height: 1.2;
+    padding: .6rem;
+}
+
+#description {
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0.2rem;
+  }
+  
+#survey-form {
+    background-color: #2222425d;
+    /* text-align: center; */
+    padding: 3rem 2.4rem;
+    border-radius: 7px;
+  }
+  
+#submit {
+    background-color: #22d87d;
+    color: #ffe;
+    padding: .7rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    transition: opacity .5s ease-in-out;
+  }
+  
+#submit:hover {
+    background: rgb(9, 168, 89);
+    opacity: 0.8;
+  }
+  
+.form {
+    width: 100%;
+    padding: .7rem;
+    border-radius: 6px;
+    font-size: 1.0rem;
+    border: none;
+  }
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-family: 'REM', sans-serif;
+        font-size: .5rem;
+        background-color: #694873;
+        width: 100%;
+        height: auto;
+        color: #ffe;
+      }
+    
+    #heading {
+        max-width: 450px;
+        margin: 2rem auto;
+        padding: .6rem;
+      }
+    
+    #main {
+        padding: 0% 0% 0% 0%;
+      }
+    
+    #title {
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 1;
+        padding: .3rem;
+      }
+    
+    #description {
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 0.2rem;
+      }
+    
+    #survey-form {
+        background-color: #2222425d;
+        padding: 1rem 1.2rem;
+        border-radius: 5px;
+      } 
+}

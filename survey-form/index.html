@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="heading">
+        <h1 id="title">Voz de los programadores! ¡Cuéntanos tu elección!</h1>
+        <p id="description">¡Nos encanta saber qué tecnología y herramientas están utilizando los ingenieros de software en
+            todo el mundo! ¡Todas y
+            cada una de las opiniones de los desarrolladores son muy valiosas para nosotros!</p>
+    </header>
+
+    <main id="main">
+
+        <form action="get" id="survey-form">
+
+            <section id="input-fields">
+                <label for="Nombre" id="name-label">Nombre</label>
+                <input type="text" class="form" value="Nombre" maxlength="15" placeholder="su nombre" id="name" name="nombre" required>
+                <br><br>
+                <label for="" id="email-label">Email</label>
+                <input class="form" value="Email" type="email" placeholder="su email" name="email" id="email" required>
+                <br><br>
+                <label id="number-label">Número</label>
+                <input type="number" class="form" placeholder="37" name="number" id="number" min="18" max="99">
+            </section>
+
+            <section>
+                <br>
+                <label><strong>Lenguaje de programación en el que eres experto:</strong></label>
+
+                <select name="code-lang" class="form" id="dropdown">
+                    <option value="C">C (lenguaje de programación)</option>
+                    <option value="C#">C#</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Js">Javas Script</option>
+                    <option value="Go">Go (lenguaje de programación)</option>
+                    <option value="ruby">Ruby on Rails</option>
+                    <option value="C++">C++</option>
+                    <option value="java">Java</option>
+                </select>
+            </section>
+
+            <section>
+                <br>
+                <label>Situación laboral:</label>
+                <br>
+                <input type="radio" name="gender" value="emplyoed">Titular de un puesto de trabajo a tiempo completo. (Empleado)
+                <br>
+                <input type="radio" name="gender" value="freelancer">Titular de un puesto de trabajo a tiempo parcial.
+        (Autónomo)
+                <br>
+                <input type="radio" name="gender" value="applier">Buscando trabajo. (Aplicador)</label>
+                <br>
+                <input type="radio" name="gender" value="unemployed">Soy un estudiante. (Desempleados)
+            </section>
+
+            <section>
+                <br><br>
+                <label><strong>Última experiencia tecnológica:</strong></label>
+                <br>
+                <input type="checkbox" name="tech1" value="flutter">Flutter UI<br>
+                <input type="checkbox" name="tech2" value="nodejs">Node.js<br>
+                <input type="checkbox" name="tech3" value="tnflow">Tensorflow<br>
+                <input type="checkbox" name="tech4" value="git">Github<br>
+                <input type="checkbox" name="tech5" value="devops">Dev-Ops
+                <br>
+            </section>
+
+            <section id="ending">
+                <br><br>
+                <label for="" id="comments-label">¿Tiene alguna sugerencia sobre esta encuesta?</label>
+                <br>
+                <textarea class="form" placeholder="Por favor llenar libremente para escribir una reseña" style="height: 120px"></textarea>
+                <br><br>
+                <button id="submit" class="form">Enviar</button>
+            </section>
+        </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
