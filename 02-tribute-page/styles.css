@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #D0BCD5;
+}
+
+a {
+
+  color: inherit;
+}
+
+#main {
+  margin-bottom: .5rem;
+}
+
+#title {
+  font-size: 400%;
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+}
+
+.center {
+  margin: 2rem auto 0;
+  padding: 1.5rem auto;
+  text-align: center;
+}
+
+.list {
+  text-align: justify;
+  padding: 1rem 3.5rem;
+}
+
+#tribute-info {
+  background-color: #75a3ecf6;
+  padding-top: 3rem;
+}
+
+.font {
+  background-color: #a499b3;
+  width: 90%;
+  display: inline-block;
+  padding: 1rem 4rem;
+}
