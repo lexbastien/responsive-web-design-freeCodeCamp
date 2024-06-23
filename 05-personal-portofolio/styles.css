@@ -1,0 +1,255 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  color: antiquewhite;
+}
+
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Barlow Condensed', sans-serif;
+  text-align: center;
+  background-color: rgb(190, 25, 25);
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #fdb347;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+}
+
+#nav-list{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+ol > li {
+  list-style-type: none;
+  margin: 2rem;
+}
+
+li > a {
+  padding: 5px;
+  color: rgb(28, 85, 240);
+  text-decoration: none;
+  font-size: 1.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 2s ease-out;
+}
+/* cuando se posa cursor que cambie color relleno y borde */
+li > a:hover {
+  background-color: bisque;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  opacity: .8;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 4rem;
+  width: 100%;
+  height: 100vh;
+}
+
+.welcome-section > p {
+  text-decoration: underline;
+  text-transform: uppercase;
+  line-height: .6rem;
+}
+
+h1 {
+  /* da sombra a un texto */
+  text-shadow: 3px 4px 3px rgb(172, 5, 5);
+  text-align: center;
+  font-size: 6.8rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: .8;
+}
+
+h2 {
+  font-size: 5rem;
+}
+span {
+	letter-spacing: 7px;
+	font-size: 2rem;
+	line-height: 1;
+}
+
+/* Seccion de tecnologias */
+.tecnologies{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(22, 21, 21);
+  height: 100vh;
+  /* margin: 3.5rem auto; */
+  /* padding: 4rem auto; */
+  gap: 2rem;
+  border-bottom: 3px solid  rgb(172, 5, 5);
+}
+
+.tecnologies-title-main {
+  margin: 10rem auto 2rem auto;
+  font-size: 6rem;
+  /* margin-top: 5rem; */
+  padding: 0 auto 2.1rem auto;
+}
+
+#tecnologies-title {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: .2rem;
+}
+
+.tecnologies_icons {
+  /* para distancia entre lineas */
+  line-height: 2;
+  /* margin: 65px; */
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+}
+
+i.icon {
+  font-size: 7rem;
+}
+
+figure figcaption {
+  font-size: 2.2rem;
+}
+
+/* seccion de trabajos o proyectos */
+.works {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap;
+  padding: 4rem auto 2rem auto; */
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.works-title {
+  margin: 2rem auto 1rem auto;
+  font-size: 5.2rem;
+  margin-top: 3rem;
+}
+
+.works-p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: .2rem;
+  margin: 1rem auto 5rem;
+}
+
+/* parte de los proyectos */
+
+.project-title {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 680px;
+  gap: 4rem;
+  /* justify-content: space-around; */
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem auto;
+}
+
+.tarjeta-practica {
+  max-width: 300px;
+  max-height: 300px;
+  padding: 2rem .5rem;
+  background-color: lightseagreen;
+  border-radius: 16px;
+  align-content: center;
+}
+
+.tarjeta-practica a {
+text-decoration: none;
+}
+
+.tarjeta-practica h3{
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
+.tarjeta-practica p {
+  font-size: 2rem;
+}
+
+/* parte de Contactos y links */
+.contact {
+  margin: 2rem auto;
+  width: 100%;
+  height: 85vh;
+  background-color: rgb(59, 75, 112);
+}
+
+.contact_title {
+  padding-top: 9rem;
+  font-size: 5.8rem;  
+}
+
+.contact_subtitle {
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+
+.contact_links {
+   display: flex;
+   max-width: 95vw;
+   justify-content: center;
+   align-items: center;
+   gap: 1.5rem 3rem;
+}
+
+.contact_link {
+  font-size: 2.2rem;
+  text-decoration: none;
+}
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 1rem;
+  background: var(--main-gray);
+  border-top: 4px solid var(--main-red);}
+
+footer p {
+  font-size: 1.7rem;
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  .tecnologies{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(22, 21, 21);
+  }
+  
+  .project-title {
+    max-width: 100%;}
+
+  .works {
+    width: 100%;
+  }
+}
